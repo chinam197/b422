@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import { client } from "../../config/client";
-import removeTodo from "../removeTodo/removeTodo";
+import removeTodo from "../../remove/removeTodo";
 import updateTodo from "../editUpdateTodo/updateTodo";
 import objUpdateTodo from "../editUpdateTodo/updateTodo";
 export let numberRender = null;
