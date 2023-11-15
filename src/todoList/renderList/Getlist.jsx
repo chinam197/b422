@@ -1,8 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import { client } from "../../config/client";
-import removeTodo from "../../remove/removeTodo";
-import updateTodo from "../editUpdateTodo/updateTodo";
+import RemoveTodo from "../../remove/removeTodo";
 import objUpdateTodo from "../editUpdateTodo/updateTodo";
 export let numberRender = null;
 export let reload = (render = 0) => {
@@ -115,7 +114,7 @@ function Getlist() {
                         className="bg-red-500 hover:bg-red-700 text-white  font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline "
                         onClick={(e) => {
                           e.preventDefault();
-                          removeTodo(_id, () => {
+                          RemoveTodo(_id, () => {
                             <Getlist />;
                           });
                         }}
@@ -141,7 +140,7 @@ function Getlist() {
                       className="bg-red-500 hover:bg-red-700 text-white  font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline "
                       onClick={(e) => {
                         e.preventDefault();
-                        removeTodo(_id);
+                        RemoveTodo(_id);
                       }}
                     >
                       Xóa

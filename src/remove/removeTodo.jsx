@@ -2,7 +2,7 @@ import { client } from "../../config/client";
 import { reload } from "../renderList/Getlist";
 import Getlist from "../renderList/Getlist";
 
-const removeTodo = async (_id) => {
+const RemoveTodo = async (_id) => {
   const isConfirmed = window.confirm(
     "Bạn có chắc chắn muốn thực hiện hành động xóa mục này?"
   );
@@ -26,4 +26,4 @@ const removeTodo = async (_id) => {
     alert("da huy xoa");
   }
 };
-export default removeTodo;
+export default RemoveTodo;
